@@ -1,0 +1,61 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&family=Press+Start+2P&display=swap" rel="stylesheet">
+    <title>Game: Color Guesser</title>
+  </head>
+  <body>
+    <div id="app">
+      <div class="description" data-testid="gameInstructions">
+          <h1 class="cool-text">Guess the correct color!</h1>
+          <p>Try to guess amongst the six boxes which color is present in the main box. Goodluck!</p>
+      </div>
+      <div class="info container">
+        <div  data-testid="gameStatus">
+          <p id="wrong" class="status hidde">Wrong</p>
+          <p id="right" class="status hidden">Right</p>
+        </div> 
+        <p data-testid="" class="score">
+          <span id="correct">0</span>/<span id="total">0</span>  
+        </p>
+      </div>
+      <div id="main-box" class="" data-testid="colorBox">
+
+      </div>
+
+      <p class="container select-text">Selected Color:</p>
+      <div id="select-box" class="" >
+
+      </div>
+
+      <p class="select-text container">Select a color:</p>
+      <div class="options">
+        <button name="option" value="blue" class="blue" data-testid="colorOption"></button>
+        <button name="option" value="green" class="green" data-testid="colorOption"></button>
+        <button name="option" value="purple" class="purple" data-testid="colorOption"></button>
+        <button name="option" value="red" class="red" data-testid="colorOption"></button>
+        <button name="option" value="yellow" class="yellow" data-testid="colorOption"></button>
+        <button name="option" value="orange" class="orange" data-testid="colorOption"></button>
+      </div>
+     
+      <div id="game-over" class="hidde">
+        <div>
+          <h1 class="cool-text">Game over!</h1>
+          <p>You got <span id="totalCorrect">1</span>/<span>10</span></p>
+          <button id="newGameButton" data-testid="newGameButton">New Game!</button>
+        </div>
+      </div>
+
+    </div>
+  </div>
+      
+    
+      
+    <script type="module" src="/src/main.js"></script>
+  </body>
+</html>

@@ -1,0 +1,166 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: #FAF3E0; /* Light cream */
+  font-family: "Plus Jakarta Sans", serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+}
+
+.description{
+  display: grid;
+  gap:2px
+}
+
+.score{
+  font-weight: 500;
+}
+
+#app{
+  padding: 40px 10px;
+  position: relative;
+}
+
+
+.cool-text {
+  font-family: "Press Start 2P", serif;
+  font-style: normal;
+  font-size: 36px;
+  font-weight: 500;
+}
+
+#main-box{
+  border: 1px solid black;
+  height: 140px;
+  max-width: 400px;
+  width: 50vw;
+  margin: 0 auto;
+  margin-top: 10px;
+}
+
+#select-box{
+  border: 1px solid black;
+  height: 140px;
+  max-width: 400px;
+  width: 50vw;
+  margin: 0 auto;
+}
+
+.select-text{
+  font-weight: 600;
+  font-size: 18px;
+  padding: 10px 0;
+}
+
+.status{
+  color: white;
+  width: fit-content;
+  padding: 10px 20px;
+  font-weight: 500;
+}
+
+#wrong{
+  background-color:#FF3131;
+}
+
+#right{
+  background-color: #39FF14;
+}
+
+.hidden{
+  display: none!important;;
+}
+
+.options{
+  display: flex;
+  grid-template-columns: auto auto auto;
+  justify-content: space-between;
+  gap: 10px;
+  max-width: 400px;
+  width: 50vw;
+  margin: 0 auto;
+  flex-wrap: wrap;
+}
+
+.options button{
+  width: 50px;
+  height: 50px;
+}
+
+.info{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 20px;
+}
+
+.container{
+  max-width: 400px;
+  width: 50vw;
+  margin: 0 auto;
+}
+
+.blue{
+  background: #0074E4;
+}
+
+.green{
+  background-color: #39FF14;
+}
+
+.purple{
+  background-color: #5D3FD3;
+}
+
+.red{
+  background-color: #FF3131;
+}
+
+.yellow{
+  background-color: #FFD700;
+}
+
+.orange{
+  background-color: #FF6700;
+}
+
+#game-over{
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0.3);
+}
+
+#game-over div{
+  height: fit-content;
+  padding: 50px 30px;
+  background: white;
+  border-radius: 7px; 
+}
+
+#game-over h1{
+  font-size: 24px;
+  margin-bottom: 7px;
+}
+
+#game-over p{
+  font-size: 18px;
+  font-weight: 500;
+  margin-bottom: 20px;
+}
+
+#game-over button{
+  width: 100%;
+  height: 40px;
+  margin: 0 auto;
+  color: white;
+  background: #0074E4;
+}
